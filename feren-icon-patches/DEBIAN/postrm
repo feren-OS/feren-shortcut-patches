@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ -f "/usr/share/applications/mintinstall-kde.desktop" ]; then
+	sed -i 's/mintinstall/software-properties-mint/g' "/usr/share/applications/mintinstall-kde.desktop"
+fi
+if [ -f "/usr/share/applications/io.elementary.photos.desktop" ]; then
+	sed -i 's/shotwell/multimedia-photo-manager/g' "/usr/share/applications/io.elementary.photos.desktop"
+fi
+if [ -f "/usr/share/applications/io.elementary.photos-viewer.desktop" ]; then
+	sed -i 's/shotwell/multimedia-photo-viewer/g' "/usr/share/applications/io.elementary.photos-viewer.desktop"
+fi
